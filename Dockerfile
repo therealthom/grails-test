@@ -1,4 +1,4 @@
-FROM eap71-openshift:latest
+FROM openshift/wildfly-101-centos7
 # FROM openshift/base-centos7:latest
 
 COPY resources/environment /opt
