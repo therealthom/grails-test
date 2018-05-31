@@ -13,6 +13,8 @@ RUN subscription-manager register --username=siisws --password=n0t13n3! && \
 
 RUN /bin/bash -c 'source /opt/environment; echo $GRAILS_HOME'
 
+RUN /bin/bash -c '$GRAILS_HOME/bin/grails'
+
 EXPOSE 8080
 
 RUN /bin/bash -c "while true; do echo test; sleep 5; done"
