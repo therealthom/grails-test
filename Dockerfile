@@ -1,6 +1,6 @@
 FROM rhel7:latest
 
-COPY .profile /opt
+COPY resources/environment /opt
 COPY resources/grails-1.3.7.zip /opt
 
 RUN subscription-manager register --username=siisws --password=n0t13n3! && \
