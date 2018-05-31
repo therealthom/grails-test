@@ -8,5 +8,4 @@ RUN subscription-manager register --username=siisws --password=n0t13n3! && \
     yum -y update && \
     yum -y install unzip
 
-
-EXPOSE 9088
+EXPOSE 8080
