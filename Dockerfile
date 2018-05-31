@@ -11,11 +11,8 @@ RUN subscription-manager register --username=siisws --password=n0t13n3! && \
     unzip /opt/grails-1.3.7.zip -d /opt && \
     rm -rf /opt/grails-1.3.7.zip
 
-COPY /resources/run.sh /opt/run.sh
-CMD [ "/bin/bash", "/opt/run.sh" ]
-
-RUN echo $GRAILS_HOME
-
-CMD bash -c "while true; do echo test; sleep 5; done"
+RUN /bin/bash -c 'source /opt/environment; echo $GRAILS_HOME'
 
 EXPOSE 8080
+
+RUN /bin/bash -c "while true; do echo test; sleep 5; done"
