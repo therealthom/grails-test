@@ -17,5 +17,3 @@ RUN /bin/bash -c 'echo $PATH'
 RUN /bin/bash -c 'grails'
 
 EXPOSE 8080
-
-RUN /bin/bash -c "while true; do echo test; sleep 5; done"
