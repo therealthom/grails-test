@@ -4,7 +4,9 @@ FROM rhel7:latest
 
 RUN subscription-manager register --username=siisws --password=n0t13n3! && \
     subscription-manager attach --pool=8a85f98c5f7d4e9d015f80fed6b41e36 && \
+    yum-config-manager --enable rhel-7-server-optional-rpms && \
     yum -y update && \
-    yum clean all
+    yum -y install unzip
+
 
 EXPOSE 9088
