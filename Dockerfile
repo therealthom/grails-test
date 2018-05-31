@@ -1,4 +1,4 @@
-FROM jboss-eap-7/eap71-openshift:latest
+FROM eap71-openshift:latest
 # FROM openshift/base-centos7:latest
 
 COPY resources/environment /opt
