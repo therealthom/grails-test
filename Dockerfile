@@ -12,10 +12,9 @@ RUN subscription-manager register --username=siisws --password=n0t13n3! && \
     rm -rf /opt/grails-1.3.7.zip
 
 RUN /bin/bash -c 'source /opt/environment; echo $GRAILS_HOME'
-
 ENV PATH="${GRAILS_HOME}/bin:${PATH}"
-
-RUN grails
+RUN /bin/bash -c 'echo $PATH'
+RUN /bin/bash -c 'grails'
 
 EXPOSE 8080
 
