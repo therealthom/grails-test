@@ -16,4 +16,6 @@ CMD [ "/bin/bash", "/opt/run.sh" ]
 
 RUN echo $GRAILS_HOME
 
+CMD bash -c "while true; do echo test; sleep 5; done"
+
 EXPOSE 8080
