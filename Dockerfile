@@ -1,4 +1,4 @@
-FROM centos7:latest
+FROM rhel7:latest
 
 # ADD grails-1.3.7.zip /opt/
 
