@@ -1,5 +1,5 @@
 # FROM jboss-eap-7/eap71-openshift:latest
-FROM openshift/base-centos7
+FROM openshift/base-centos7:latest
 
 COPY resources/environment /opt
 COPY resources/grails-1.3.7.zip /opt
