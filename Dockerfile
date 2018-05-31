@@ -14,6 +14,6 @@ RUN subscription-manager register --username=siisws --password=n0t13n3! && \
 COPY /resources/run.sh /opt/run.sh
 CMD [ "/bin/bash", "/opt/run.sh" ]
 
-RUN grails
+RUN echo $GRAILS_HOME
 
 EXPOSE 8080
