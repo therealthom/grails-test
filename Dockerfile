@@ -1,4 +1,4 @@
-FROM rhel7:latest
+FROM eap71:latest
 
 COPY resources/environment /opt
 COPY resources/grails-1.3.7.zip /opt
